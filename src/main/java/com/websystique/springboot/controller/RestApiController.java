@@ -32,6 +32,10 @@ public class RestApiController {
 	public ResponseEntity<String> healthCheck() {		
 		return new ResponseEntity<String>("Hey I am Up!", HttpStatus.OK);
 	}
+	@RequestMapping(value = "/test/", method = RequestMethod.GET)
+	public ResponseEntity<String> test() {		
+		return new ResponseEntity<String>("Hey I for test!", HttpStatus.OK);
+	}
 
 	// -------------------Retrieve All Users---------------------------------------------
 
