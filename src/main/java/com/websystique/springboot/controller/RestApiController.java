@@ -27,6 +27,11 @@ public class RestApiController {
 
 	@Autowired
 	UserService userService; //Service which will do all data retrieval/manipulation work
+	
+	
+	public ResponseEntity<String> healthCheck() {		
+		return new ResponseEntity<String>("Hey I am Up!", HttpStatus.OK);
+	}
 
 	// -------------------Retrieve All Users---------------------------------------------
 
