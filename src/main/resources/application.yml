@@ -1,10 +1,10 @@
 spring:
  profiles:
-  active: prod
+  active: local
 
 ---
 server:
-  port: 8080
+  port: 8888
   contextPath: /SpringBootCRUDApp
 ---
 spring:
@@ -28,8 +28,8 @@ spring:
 datasource:
   sampleapp:
     url: jdbc:mysql://localhost:3306/test
-    username: root
-    password: root
+    username: root1
+    password: root1
     driverClassName: com.mysql.jdbc.Driver
     defaultSchema:
     maxPoolSize: 20

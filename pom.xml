@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.websystique.springboot</groupId>
+	<groupId>com.test.springboot</groupId>
 	<artifactId>SpringBootCRUDApplicationExample</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
@@ -44,8 +44,7 @@
 		<!-- Add H2 database support [for running with local profile] -->
 		<dependency>
 			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-			<version>${h2.version}</version>
+			<artifactId>h2</artifactId>			
 		</dependency>
 		<!-- Add MySQL database support [for running with PRODUCTION profile] -->		
 		<dependency>
