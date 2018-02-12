@@ -1,11 +1,11 @@
 pipeline {
     agent {
-        docker { image 'openjdk:8-jdk-alpine' }
+        docker { image 'nginx' }
     }
     stages {
         stage('Test') {
             steps {
-                sh 'node --version'
+                sh 'echo "hello"'
             }
         }
     }
