@@ -6,7 +6,6 @@ pipeline {
         stage('Test') {
             steps {
                 echo "hello"
-                bat("docker version")
             }
         }
     }
